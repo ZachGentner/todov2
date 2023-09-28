@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div id="toolbar">
+        <div>
+            <button id="btnSidebar">
+                <i class="fa-solid fa-bars fa-lg"></i>
+            </button>
+            <button id="btnHome">
+                <i class="fa-solid fa-house fa-lg"></i>
+            </button>
+            <input id="search" type="text" placeholder="Search">
+        </div>
+        <div id="navRight">
+            <button id="btnHelp">
+                <i class="fa-solid fa-question fa-lg"></i>
+            </button>
+            <div id="profile">
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div id="sidebar">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-inbox"></i>
+                    <p>Inbox</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <p>Today</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-calendar-week"></i>
+                    <p>Week</p>
+                </li>
+            </ul>
+
+            <ul id="projectSection">
+                <div id="projHeader" style="display: flex; justify-content: space-between; align-items: center;">
+                    <p>Projects</p>
+                    <div>
+                        <button id="btnAddProject">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <button id="btnToggleProject">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="projectList">
+                    <li class="project">
+                        <div style="display: flex; flex-direction: row; justify-content: end; align-items: center;">
+                            <i class="fa-solid fa-circle fa-xs"></i>
+                            <p>Project</p>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="container">
+                <button id="test" style="width: 100px; background: red;">Test</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="max-width: 80%;">
+            <a href="https://www.linkedin.com/in/zachgentner/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+            <a href="https://www.github.com/zachgentner/" target="_blank">
+                <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+            <a href="https://www.twitter.com/zach_gentner/" target="_blank">
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+            </a>
+            <a href="https://www.youtube.com/zachgentner/" target="_blank">
+                <i class="fa-brands fa-youtube fa-xl"></i>
+            </a>
+        </div>
+    </footer>
+
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>

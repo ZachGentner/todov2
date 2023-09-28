@@ -1,0 +1,194 @@
+:root {
+    --primary: #047aed;
+    --secondary: #002240;
+    --light: #f8f9fa;
+    --neutral: #e4e3e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 94%;
+}
+
+button {
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0, .1);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+input {
+    opacity: .5;
+
+}
+input:focus {
+    opacity: 1;
+}
+
+footer {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    color: #fff;
+}
+
+#navRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navRight button {
+    margin-right: 5px;
+}
+
+.container {
+    width: 1200px;
+    background-color: var(--light);
+}
+
+#toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: auto;
+    background-color: var(--primary);
+    padding: 10px 30px;
+}
+
+#search {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#toolbar input {
+    height: 1.7rem;
+}
+
+#sidebar {
+    min-width: 300px;
+    height: 100%;
+    background-color: var(--light);
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+
+#sidebar input {
+    top: -1px;
+    line-height: 1rem;
+    position: relative;
+    border: none;
+}
+
+#sidebar button {
+    color: black
+}
+
+#sidebar button:hover {
+    background-color: rgb(0, 0, 0, 0);
+}
+
+#sidebar li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+}
+
+#sidebar li:hover {
+    background-color: var(--neutral);
+    font-weight: bolder;
+}
+
+#sidebar i {
+    position: relative;
+    top: -1px;
+    padding: 3px;
+
+}
+#sidebar input {
+    width: auto;
+}
+
+#sidebar p {
+    padding: 0 7px;
+}
+
+
+
+
+
+
+
+
+#projHeader {
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+#projHeader button {
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+    opacity: .6;
+    border-radius: 5px;
+}
+
+#projHeader button:hover {
+    opacity: 1;
+    background-color: var(--neutral);
+}
+
+#projectList li {
+    justify-content: space-between;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+#profile {
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 100px;
+}
+
+.flex {
+    display: flex;
+}
